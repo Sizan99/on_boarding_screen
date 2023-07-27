@@ -76,17 +76,20 @@ class _OnboardingState extends State<Onboarding> {
                             ),
                           ),
                           const SizedBox(
-                            height: 62,
+                            height: 50,
                           ),
                         ],
                       );
                     }),
               ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(
-                      contents.length, (index) => dot(index, context)),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 5),
+                child: Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(
+                        contents.length, (index) => dot(index, context)),
+                  ),
                 ),
               ),
               Container(
